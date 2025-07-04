@@ -1,7 +1,14 @@
 {
   "name": "turncut",
   "module": "src/index.ts",
+  "version": "0.0.2",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZECTBynmo/turncut"
+  },
+  "author": "Mike Vegeto",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
   },
