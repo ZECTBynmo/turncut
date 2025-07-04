@@ -1,8 +1,8 @@
-# TurnCut 🎙️
+# TurnCut
 
 A real-time speech interruption detection library designed specifically for LLM voice agents and phone call applications. TurnCut enables AI assistants to detect when a caller starts speaking so they can immediately stop their own text-to-speech output and listen.
 
-## 🎯 Purpose
+## Purpose
 
 In conversational AI systems, especially phone-based voice agents, natural conversation requires the ability to detect when a human user begins speaking during the AI's response. This "barge-in" or interruption detection is crucial for:
 
@@ -11,7 +11,7 @@ In conversational AI systems, especially phone-based voice agents, natural conve
 - **Better user experience**: Prevents the AI from talking over the user
 - **Efficient bandwidth usage**: Stops unnecessary TTS audio transmission
 
-## 🚀 Features
+## Features
 
 - **Real-time detection**: Optimized for 20ms audio frames (telephony standard)
 - **Twilio-ready**: Native support for 8kHz μ-law encoded audio streams
@@ -21,7 +21,7 @@ In conversational AI systems, especially phone-based voice agents, natural conve
 - **Low CPU overhead**: Efficient FFT-based processing with minimal memory allocation
 - **Configurable**: Tunable parameters for different environments and sensitivity requirements
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Using Bun (recommended)
@@ -34,7 +34,7 @@ npm install turncut
 yarn add turncut
 ```
 
-## 🏗️ Quick Start
+## Quick Start
 
 ### Basic Usage with Twilio Media Streams
 
@@ -94,7 +94,7 @@ while (audioStream.isActive) {
 }
 ```
 
-## 🔧 API Reference
+## API Reference
 
 ### `SpeechDetector`
 
@@ -136,7 +136,7 @@ Resets the detector's internal state. Use this when starting a new call or conve
 | High Quality | 16kHz | PCM-16 | Local/high-quality audio |
 | Custom | Any | μ-law/PCM-16 | Custom telephony systems |
 
-## 🧠 How It Works
+## How It Works
 
 TurnCut uses a sophisticated multi-feature approach to detect speech onset:
 
@@ -161,13 +161,13 @@ Speech Score = 0.6 × Band Ratio + 0.3 × Spectral Flux + 0.1 × ZCR
 Speech Detected = Score > (Noise Floor + Hysteresis Threshold)
 ```
 
-## 📊 Performance Characteristics
+## Performance Characteristics
 
 - **Latency**: 20-60ms (1-3 frames) detection delay
 - **CPU Usage**: ~1-2% on modern hardware for 8kHz audio
 - **Memory**: <1MB working set per detector instance (with default window size)
 
-## 🛠️ Integration Examples
+## Integration Examples
 
 ### Express.js + WebSocket Server
 
@@ -221,7 +221,7 @@ export const handler = (context, event, callback) => {
 }
 ```
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -243,7 +243,7 @@ Enable debug logging to see internal detector state:
 process.env.DEBUG_SPEECH = true
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License
 
