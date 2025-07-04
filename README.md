@@ -240,8 +240,7 @@ export const handler = (context, event, callback) => {
 Enable debug logging to see internal detector state:
 
 ```typescript
-// Set DEBUG_SPEECH = true in src/index.ts
-// Recompile to see detailed frame analysis
+process.env.DEBUG_SPEECH = true
 ```
 
 ## 📄 License

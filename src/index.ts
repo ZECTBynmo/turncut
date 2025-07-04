@@ -35,7 +35,7 @@
  * --------------------------------------------------------------------------- */
 import * as KissFFT from "kissfft-js"
 
-const DEBUG_SPEECH = false
+const DEBUG_SPEECH = process.env.DEBUG_SPEECH === "true"
 
 const debugLog = (msg: string, data?: Record<string, unknown>) => {
   if (DEBUG_SPEECH) {
