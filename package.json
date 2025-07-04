@@ -1,0 +1,14 @@
+{
+  "name": "turncut",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "kissfft-js": "^0.1.8"
+  }
+}
