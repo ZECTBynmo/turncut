@@ -53,7 +53,7 @@ const debugLog = (msg: string, data?: Record<string, unknown>) => {
 const FRAME_MS = 20
 const PRE_EMPH = 0.9
 const MEDIAN_WIN = 50 // 50 × 20 ms = 1000 ms
-const ENTER_HYST = 0.15
+const ENTER_HYST = 0.1
 const EXIT_HYST = 0.05
 const ONSET_FRAMES = 3
 const MIN_ENERGY_THRESHOLD = 1e-4 // minimum energy to consider valid speech
